@@ -23,14 +23,42 @@
   </section>
 
   <section id="gallery">
-    <h2>My Artworks</h2>
-    <div class="gallery-grid">
-      <img src="art1.jpg" alt="Artwork 1" />
-      <img src="art2.jpg" alt="Artwork 2" />
-      <img src="art3.jpg" alt="Artwork 3" />
-      <!-- Add more as needed -->
-    </div>
-  </section>
+  <h2>My Artworks</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="showCategory('drawings')">Drawings</button>
+    <button class="tab-button" onclick="showCategory('paintings')">Paintings</button>
+    <button class="tab-button" onclick="showCategory('designs')">Designs</button>
+  </div>
+
+  <div id="drawings" class="gallery-grid category active">
+    <img src="drawing1.jpg" alt="Drawing 1" />
+    <img src="drawing2.jpg" alt="Drawing 2" />
+  </div>
+
+  <div id="paintings" class="gallery-grid category">
+    <img src="painting1.jpg" alt="Painting 1" />
+    <img src="painting2.jpg" alt="Painting 2" />
+  </div>
+
+  <div id="designs" class="gallery-grid category">
+    <img src="design1.jpg" alt="Design 1" />
+    <img src="design2.jpg" alt="Design 2" />
+  </div>
+</section>
+
+<script>
+  function showCategory(category) {
+    const categories = document.querySelectorAll('.category');
+    const buttons = document.querySelectorAll('.tab-button');
+
+    categories.forEach(c => c.classList.remove('active'));
+    buttons.forEach(b => b.classList.remove('active'));
+
+    document.getElementById(category).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
 
   <section id="contact">
     <h2>Contact Me</h2>
