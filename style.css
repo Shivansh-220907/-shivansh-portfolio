@@ -1,4 +1,4 @@
-/* Base styles */
+/* 1. Base Reset & Font */
 body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
@@ -8,44 +8,75 @@ body {
   line-height: 1.6;
 }
 
+/* 2. Layout Container */
+section {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+
+/* 3. Header Section */
 header {
   text-align: center;
-  padding: 2rem 1rem;
-  background: #f9f9f9;
+  padding: 3rem 1rem 2rem;
+  background-color: #f9f9f9;
 }
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* 4. Headings */
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #111;
 }
 
-section {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+/* 5. Paragraph Text */
+p {
+  font-size: 1.05rem;
+  color: #444;
 }
 
+/* 6. Gallery Grid */
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .art-grid img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.art-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 7. Contact Section */
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 8. Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #f1f1f1;
+  padding: 2rem 1rem;
+  background-color: #f1f1f1;
   font-size: 0.9rem;
+  color: #666;
 }
