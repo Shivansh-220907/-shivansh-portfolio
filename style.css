@@ -49,19 +49,36 @@ footer {
   margin-bottom: 20px;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
 .tab-button {
-  background-color: #eee;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  background-color: white;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tab-button:hover {
+  border-color: #333;
+  color: #111;
 }
 
 .tab-button.active {
-  background-color: #ffb3b3;
-  color: #000;
+  background-color: #333;
+  color: white;
+  border-color: #333;
 }
 
 .category {
