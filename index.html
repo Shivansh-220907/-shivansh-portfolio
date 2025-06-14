@@ -25,9 +25,29 @@
   </section>
 
   <section id="gallery">
-    <h2>Gallery</h2>
-    <!-- We’ll add tab buttons and images here later -->
-  </section>
+  <h2>Gallery</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" data-tab="drawings">Drawings</button>
+    <button class="tab-button" data-tab="paintings">Paintings</button>
+    <button class="tab-button" data-tab="designs">Designs</button>
+  </div>
+
+  <div class="gallery-grid category active" id="drawings">
+    <img src="drawing1.jpg" alt="Drawing 1" />
+    <img src="drawing2.jpg" alt="Drawing 2" />
+  </div>
+
+  <div class="gallery-grid category" id="paintings">
+    <img src="painting1.jpg" alt="Painting 1" />
+    <img src="painting2.jpg" alt="Painting 2" />
+  </div>
+
+  <div class="gallery-grid category" id="designs">
+    <img src="design1.jpg" alt="Design 1" />
+    <img src="design2.jpg" alt="Design 2" />
+  </div>
+</section>
 
   <section id="contact">
     <h2>Contact</h2>
