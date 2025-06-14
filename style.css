@@ -1,4 +1,4 @@
-/* 1. Base Reset & Font */
+ /* Base settings */
 body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
@@ -6,6 +6,22 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+}
+
+/* Headings (use Poppins for bold, modern feel) */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional tweaks for size */
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 /* 2. Layout Container */
