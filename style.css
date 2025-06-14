@@ -99,30 +99,44 @@ footer {
   animation: fadeIn 0.5s ease;
 }
 
-/* Intro section styling */
-.intro {
+/* Animation for header */
+.animated-header {
+  animation: fadeInSlideUp 1s ease-out;
   text-align: center;
-  padding: 4rem 1rem 2rem;
-  animation: fadeSlideDown 1s ease-out;
+  padding: 3rem 1rem 2rem;
+  background-color: #fff; /* optional */
 }
 
-.intro h1 {
+/* Optional styling for header elements */
+.animated-header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
   font-family: 'Inter', sans-serif;
 }
 
-.intro p {
+.animated-header p {
   font-size: 1.2rem;
   color: #555;
+  margin-bottom: 1rem;
 }
 
-/* Animation keyframes */
-@keyframes fadeSlideDown {
+.animated-header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.animated-header nav a:hover {
+  color: #007bff;
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInSlideUp {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
