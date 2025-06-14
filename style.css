@@ -55,3 +55,50 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  background-color: white;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  border-color: #333;
+  color: #111;
+}
+
+.tab-button.active {
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
+
+.gallery-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category.active {
+  display: grid;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
