@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivansh Arora - Portfolio</title>
+  <title>Shivansh Arora – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="animated-header">
-    <h1>Hello, I'm Shivansh</h1>  
-    <p>Welcome to my portfolio of drawings, paintings & designs!</p>
+
+  <header>
+    <h1>Hello, I'm Shivansh</h1>
+    <p>Welcome to my portfolio of drawings, paintings & designes</p>
     <nav>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
@@ -21,56 +21,22 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Shivansh, an artist who loves creating drawings, paintings, and designs. Art is my passion and I'm excited to share it with the world!</p>
+    <p>I’m an artist who loves to create drawings, paintings, and graphic designs. This is a collection of my favorite work.</p>
   </section>
 
   <section id="gallery">
-  <h2>My Artworks</h2>
-
-  <div class="tabs">
-    <button class="tab-button active" onclick="showCategory('drawings')">Drawings</button>
-    <button class="tab-button" onclick="showCategory('paintings')">Paintings</button>
-    <button class="tab-button" onclick="showCategory('designs')">Designs</button>
-  </div>
-
-  <div id="drawings" class="gallery-grid category active">
-    <img src="drawing1.jpg" alt="Drawing 1" />
-    <img src="drawing2.jpg" alt="Drawing 2" />
-  </div>
-
-  <div id="paintings" class="gallery-grid category">
-    <img src="Elvin.jpg" alt="Elvin" />
-    <img src="painting2.jpg" alt="Painting 2" />
-    <img src="painting3.jpg" alt="Painting 3" />
-  </div>
-
-  <div id="designs" class="gallery-grid category">
-    <img src="design1.jpg" alt="Design 1" />
-    <img src="design2.jpg" alt="Design 2" />
-  </div>
-</section>
-
-<script>
-  function showCategory(category) {
-    const categories = document.querySelectorAll('.category');
-    const buttons = document.querySelectorAll('.tab-button');
-
-    categories.forEach(c => c.classList.remove('active'));
-    buttons.forEach(b => b.classList.remove('active'));
-
-    document.getElementById(category).classList.add('active');
-    event.target.classList.add('active');
-  }
-</script>
+    <h2>Gallery</h2>
+    <!-- We’ll add tab buttons and images here later -->
+  </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: shivansharora2024@gmail.com</p>
-    <p>Instagram: <a href="https://instagram.com/itsshivansharora" target="_blank">@itsshivansharora</a></p>
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaborations or commissions.</p>
   </section>
 
   <footer>
-    <p>© 2025 Shivansh Arora</p>
+    <p>© 2025 Shivansh Arora. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
