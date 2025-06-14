@@ -144,59 +144,25 @@ footer {
   }
 }
 
-/* Basic color setup */
-body {
-  background-color: #fdfdfd;
-  color: #333333;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header styling */
-header {
-  background-color: #7C83FD;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-header nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-header nav a:hover {
-  color: #FFADAD;
-}
-
-/* Section background example */
-section {
-  padding: 3rem 1rem;
-}
-
-/* About Section */
 #about {
-  background-color: #FFFAFA;
+  background: #fff7f0;
 }
 
-/* Footer or contact section if needed */
+#gallery {
+  background: #f0f8ff;
+}
+
+#contact {
+  background: #f9f9f9;
+}
+
+header {
+  animation: fadeSlideDown 0.8s ease-out;
+}
+
 footer {
-  background-color: #7C83FD;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  background: #ffdfdf;
+  color: #333;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
 }
