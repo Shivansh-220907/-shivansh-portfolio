@@ -149,3 +149,7 @@ footer {
   font-weight: bold;
   border-top: 1px solid #ddd;
 }
+
+html {
+  scroll-behavior: smooth;
+}
